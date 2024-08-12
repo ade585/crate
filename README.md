@@ -118,7 +118,7 @@ Click on image to view fullscreen and zoom
     2. Install iOS dependencies `cd mobile/ios` `pod install`
 - Development
   - Run API `cd api` and `npm start`, browse GraphiQL at http://localhost:8000/
-  - Run Webapp `cd web` and `npm start`, browse webapp at http://localhost:3000/
+  - Run Webapp `cd web`,  $env:NODE_OPTIONS = "--openssl-legacy-provider"  and `npm start`, browse webapp at http://localhost:3000/
   - Run Mobile `cd mobile` and `npx react-native run-ios` for iOS and `npx react-native run-android` for Android
 - Production
   - Run API `cd api` and `npm run start:prod`, creates an optimized build in `build` directory and runs the server
